@@ -1,0 +1,21 @@
+@import "./annexes/all-settings";
+@import "./layout/base";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./components/home";
+@import "./components/hero";
+@import "./components/social";
+@import "./components/works";
+@import "./components/skills";
+@import "./components/workcard";
+@import "./components/skillcard";
+@import "./components/contact";
+@import "./components/carrousel";
+@import "./components/ficheprojet";
+@import "./components/error";
+@import "./components/header";
+
+html {
+    scroll-behavior: smooth;
+  }
+  

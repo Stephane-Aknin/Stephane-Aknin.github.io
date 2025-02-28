@@ -1,0 +1,56 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 22px;
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 220px;
+    font-weight: 700;
+    margin: 0;
+
+    @media screen and (max-width: map-get($breakpoints, large)) {
+      font-size: 96px;
+      margin: 190px 0 16px 0;
+    }
+  }
+
+  &__txt {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 70px 0 0 0;
+
+    @media screen and (max-width: map-get($breakpoints, large)) {
+      font-size: 16px;
+      margin: 0 11%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: $text-color;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 48px 0 32px 0;
+
+    @media screen and (max-width: map-get($breakpoints, large)) {
+      font-size: 14px;
+      margin-top: 110px;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration-line: underline;
+    }
+  }
+}

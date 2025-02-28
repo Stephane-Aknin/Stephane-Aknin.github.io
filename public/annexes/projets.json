@@ -1,0 +1,44 @@
+[
+    {
+      "id": "c67ab8a7",
+      "title": "Projet Kasa",
+      "description": "Le projet Kasa est une application React de location immobilière, sur ce projet que je devais monter de zéro j'ai créer la structure et les différents composants de l'application web à l'aide de React.",
+      "pictures": [
+        "/images/kasa-homepage.webp",
+        "/images/kasa-apropos.webp",
+        "/images/kasa-logement.webp"
+      ],
+      "lienrepo": "https://github.com/Halimsahin/Openclassrooms-Projet7_Kasa_Halim_Sahin",
+      "littletitle": "Kasa",
+      "littledescription": "Projet react d'une application immobilière"
+    },
+    {
+      "id": "b9123946",
+      "title": "Projet 724 Event",
+      "description": "Dans le projet 724event, je devais déboguer un site d'évènement à l'aide de test sur les différents composants du projet et l'optimisation du site.",
+      "pictures": [
+        "/images/724event-carrousel.webp",
+        "/images/724event-services.webp",
+        "/images/724event-events.webp",
+        "/images/724event-team.webp",
+        "/images/724event-contact.webp"
+      ],
+      "lienrepo": "https://github.com/Halimsahin/Openclassrooms-Projet9_724Event_Halim_Sahin",
+      "littletitle": "724 Event",
+      "littledescription": "Projet de débugage d'un site d'évènement"
+    },
+    {
+      "id": "46d188c5",
+      "title": "Projet Argent Bank",
+      "description": "Argent bank est un projet d'une application bancaire que je devais implémenter en React. Par la suite intégrer un système d'authentification pour les utilisateurs.",
+      "pictures": [
+        "/images/argentbank-homepage.webp",
+        "/images/argentbank-login.webp",
+        "/images/argentbank-user.webp"
+      ],
+      "lienrepo": "https://github.com/Halimsahin/Openclassrooms-Projet10_ArgentBank_Halim_Sahin",
+      "littletitle": "Argent Bank",
+      "littledescription": "Projet react avec API d'un site bancaire"
+    }
+  ]
+  

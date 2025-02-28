@@ -1,0 +1,28 @@
+$primary-color: #2A5D5A;          
+$secondary-color: #58A4B0;        
+$accent-color: #F1D4A1;           
+
+$background-color: #E4E8EC;       
+$background-color-secondary: #B5D3D1;  
+
+$text-color: #2C2C2C;             
+$text-color-secondary: #6B6B6B;  
+
+$border-color: #B5B5B5;           
+$border-color-hover: #4B7C7D;     
+
+$background-solid: #2A5D5A;       
+$background-solid-hover: #58A4B0; 
+
+$border-color-subtle: #D1D1D1;    
+$background-component: #F6F6F6;   
+
+$breakpoints: (
+  small: 350px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+);
+
+$wmin: 375px;
+$wmax: 768px;

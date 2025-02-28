@@ -1,0 +1,42 @@
+.social__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  gap: 30px;
+
+  a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social__icone {
+    width: 90%;
+    color: $text-color;
+  }
+
+  img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: #{map-get($breakpoints, medium)}) {
+  .social__container {
+    padding-top: 5px;
+    gap: 20px;
+
+    a {
+      width: 25px;
+      height: 25px;
+    }
+
+    .social__icone {
+      width: 90%;
+      color: $text-color;
+    }
+
+    img {
+      width: 90%;
+    }
+  }
+}

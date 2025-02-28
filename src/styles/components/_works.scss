@@ -1,0 +1,26 @@
+.works__box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, $background-color, $background-solid);
+  border: 1px solid $border-color;
+  border-radius: 15px;
+  width: 50%;
+  height: 450px;
+
+  h2 {
+    padding: 10px 30px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: #{map-get($breakpoints, medium)}) {
+  .works__box {
+    width: 100%;
+    height: 400px;
+  }
+}
