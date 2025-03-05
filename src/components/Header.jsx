@@ -72,10 +72,11 @@ const Header = () => {
 
       {/* Bouton Dark Mode */}
       <div className="header__button">
-        <button onClick={toggleDarkMode}>
-          {isDarkMode ? <Moon className="moon__icone" /> : <Sun className="sun__icone" />} {/* Afficher Moon ou Sun selon le mode */}
-        </button>
-      </div>
+  <button onClick={toggleDarkMode} aria-label={isDarkMode ? "Activer le mode clair" : "Activer le mode sombre"}>
+    {isDarkMode ? <Moon className="moon__icone" /> : <Sun className="sun__icone" />}
+  </button>
+</div>
+
     </header>
   );
 };

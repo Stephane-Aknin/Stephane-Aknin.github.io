@@ -56,8 +56,10 @@ function Contact() {
         <h2>Contactez-moi</h2>
         <form onSubmit={handleSubmit}>
           {/* Champ Nom */}
+          <label htmlFor="name">Nom</label>
           <input
             type="text"
+            id="name"
             name="name"
             placeholder="Nom"
             value={formData.name}
@@ -66,8 +68,10 @@ function Contact() {
           />
           
           {/* Champ Email */}
+          <label htmlFor="email">Email</label>
           <input
             type="email"
+            id="email"
             name="email"
             placeholder="Email"
             value={formData.email}
@@ -76,7 +80,9 @@ function Contact() {
           />
           
           {/* Champ Message */}
+          <label htmlFor="message">Message</label>
           <textarea
+            id="message"
             name="message"
             placeholder="Message"
             value={formData.message}
