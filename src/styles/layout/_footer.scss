@@ -1,3 +1,5 @@
+@use "../annexes/variables" as vars;
+
 .footer__container {
   display: flex;
   align-items: center;
@@ -7,7 +9,7 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: #{map-get($breakpoints, medium)}) {
+@media screen and (max-width: #{map-get(vars.$breakpoints, medium)}) { /* Utilisation de vars pour accéder à $breakpoints */
   .footer__container {
     font-size: 16px;
     margin: 30px;

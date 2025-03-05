@@ -1,26 +1,132 @@
+@use "../annexes/variables" as vars;
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
-  height: 5rem;
-  margin-bottom: 100px;
-}
+  padding: 1rem 5%;
+  background-color: vars.$background-color;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 
-.header__button {
-  button {
-    border: none;
-    background-color: $background-color;
-    cursor: pointer;
-    .sun__icone {
-      display: flex;
-      padding: 2px 2px;
-      color: $text-color;
-    }
+  .dark & {
+    background-color: vars.$background-dark;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
   }
 }
 
-.no-link-style {
-  text-decoration: none;
-  color: inherit;
+// BOUTON DARK MODE
+.header__button {
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: vars.$text-color;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .dark button {
+    color: vars.$text-color-light;
+  }
+}
+
+// NAVIGATION
+.header__nav {
+  .nav__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    li {
+      a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: vars.$text-color;
+        position: relative;
+        padding: 0.5rem 0;
+        transition: color 0.3s ease;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          width: 100%;
+          height: 2px;
+          background-color: vars.$primary-color;
+          transform: scaleX(0);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  .dark .header__nav .nav__list li a {
+    color: vars.$text-color-light;
+  }
+}
+
+// MENU BURGER (Mobile)
+.burger__menu {
+  display: none; // Caché en desktop
+  cursor: pointer;
+}
+
+// RESPONSIVE DESIGN (Mobile)
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1rem 3%;
+  }
+
+  .burger__menu {
+    display: block; // Afficher le menu burger en mobile
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+
+    &.open {
+      right: 0;
+    }
+
+    .nav__list {
+      flex-direction: column;
+      gap: 2rem;
+
+      li {
+        a {
+          font-size: 1.5rem;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .dark .header__nav {
+    background-color: vars.$background-dark;
+  }
 }

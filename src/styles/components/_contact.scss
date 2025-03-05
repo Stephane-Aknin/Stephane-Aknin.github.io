@@ -1,3 +1,5 @@
+@use "../annexes/variables" as vars;
+
 .contact__container {
   display: flex;
   flex-direction: column;
@@ -7,15 +9,11 @@
   padding: 40px 20px;
   gap: 30px;
   max-width: 900px;
-  background: linear-gradient(135deg, $background-color, $background-solid);
-  border: 1px solid $border-color;
+  background: linear-gradient(135deg, vars.$background-color, vars.$background-solid);
+  border: 1px solid vars.$border-color;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
 }
 
 .contact__card {
@@ -23,10 +21,10 @@
   flex-direction: column;
   align-items: center;
   width: 80%;
-  background-color: $background-component;
+  background-color: vars.$background-component;
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid $border-color-subtle;
+  border: 1px solid vars.$border-color-subtle;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease-in-out;
 
@@ -37,7 +35,7 @@
   h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: $text-color;
+    color: vars.$text-color;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -53,14 +51,14 @@
       width: 100%;
       padding: 12px;
       font-size: 1rem;
-      border: 2px solid $border-color-subtle;
+      border: 2px solid vars.$border-color-subtle;
       border-radius: 15px;
       outline: none;
       transition: all 0.3s ease;
 
       &:focus {
-        border-color: $border-color-hover;
-        box-shadow: 0 0 8px rgba($border-color-hover, 0.5);
+        border-color: vars.$border-color-hover;
+        box-shadow: 0 0 8px rgba(vars.$border-color-hover, 0.5);
       }
     }
 
@@ -70,7 +68,7 @@
     }
 
     button {
-      background-color: $background-solid;
+      background-color: vars.$background-solid;
       color: white;
       padding: 12px 20px;
       border: none;
@@ -83,20 +81,20 @@
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 
       &:hover {
-        background-color: $background-solid-hover;
+        background-color: vars.$background-solid-hover;
         transform: scale(1.05);
       }
 
       &:active {
-        background-color: $border-color;
+        background-color: vars.$border-color;
         transform: scale(0.95);
       }
     }
   }
 }
 
-//  RESPONSIVE DESIGN
-@media screen and (max-width: map-get($breakpoints, medium)) {
+// RESPONSIVE DESIGN
+@media screen and (max-width: #{map-get(vars.$breakpoints, medium)}) {
   .contact__container {
     margin: 30px auto;
     padding: 30px;

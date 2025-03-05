@@ -1,19 +1,19 @@
-@import "./annexes/all-settings";
-@import "./layout/base";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./components/home";
-@import "./components/hero";
-@import "./components/social";
-@import "./components/works";
-@import "./components/skills";
-@import "./components/workcard";
-@import "./components/skillcard";
-@import "./components/contact";
-@import "./components/carrousel";
-@import "./components/ficheprojet";
-@import "./components/error";
-@import "./components/header";
+@use "./annexes/all-settings";
+@use "./layout/base";
+@use "./layout/header";
+@use "./layout/footer";
+@use "./components/home";
+@use "./components/hero";
+@use "./components/social";
+@use "./components/works";
+@use "./components/skills";
+@use "./components/workcard";
+@use "./components/skillcard";
+@use "./components/contact";
+@use "./components/carrousel";
+@use "./components/ficheprojet";
+@use "./components/error";
+
 
 html {
     scroll-behavior: smooth;

@@ -1,3 +1,5 @@
+@use "../annexes/variables" as vars;
+
 .hero__container {
   display: flex;
   align-items: center;
@@ -5,8 +7,7 @@
   flex-wrap: wrap;
   padding: 4rem 5.5rem;
   width: 100%;
-  background: radial-gradient(circle, $background-color, $background-solid);
-
+  background: radial-gradient(circle, vars.$background-color, vars.$background-solid);
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -18,7 +19,7 @@
 
   h2 {
     font-size: 3rem;
-    color: $text-color;
+    color: vars.$text-color;
     margin-bottom: 1rem;
     position: relative;
   }
@@ -28,18 +29,18 @@
     display: block;
     width: 60px;
     height: 4px;
-    background-color: $primary-color;
+    background-color: vars.$primary-color;
     margin-top: 5px;
   }
 
   p {
     font-size: 1.2rem;
-    color: $text-color-secondary;
+    color: vars.$text-color-secondary;
     line-height: 1.6;
     margin-bottom: 1rem;
 
     strong {
-      color: $primary-color;
+      color: vars.$primary-color;
     }
   }
 }
@@ -54,7 +55,7 @@
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid $primary-color;
+    border: 5px solid vars.$primary-color;
     transition: transform 0.3s ease-in-out;
   }
 

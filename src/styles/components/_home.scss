@@ -1,3 +1,5 @@
+@use "../annexes/variables" as vars;
+
 .home__container {
   display: flex;
   align-items: center;
@@ -7,7 +9,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: map-get(vars.$breakpoints, medium)) {
   .home__container {
     padding-top: 30px;
     gap: 20px;

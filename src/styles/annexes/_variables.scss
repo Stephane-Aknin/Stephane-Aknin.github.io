@@ -1,21 +1,24 @@
-$primary-color: #2A5D5A;          
-$secondary-color: #58A4B0;        
-$accent-color: #F1D4A1;           
+$primary-color: #1E3A5F;          // Bleu foncé élégant
+$secondary-color: #4A90E2;        // Bleu vif et dynamique
+$accent-color: #F4A261;           // Orange doux et chaleureux
 
-$background-color: #E4E8EC;       
-$background-color-secondary: #B5D3D1;  
+$background-color: #F1F5F9;       // Gris très clair avec une touche de bleu
+$background-color-secondary: #DCE4EC;  // Bleu-gris apaisant
 
-$text-color: #2C2C2C;             
-$text-color-secondary: #6B6B6B;  
+$text-color: #1E1E1E;             // Noir presque pur pour un contraste fort
+$text-color-secondary: #5A5A5A;   // Gris neutre et équilibré
 
-$border-color: #B5B5B5;           
-$border-color-hover: #4B7C7D;     
+$border-color: #C7D0DD;           // Gris-bleu doux pour un effet subtil
+$border-color-hover: #3A6EA5;     // Bleu plus profond au survol
 
-$background-solid: #2A5D5A;       
-$background-solid-hover: #58A4B0; 
+$background-solid: #1E3A5F;       // Même bleu foncé pour des blocs solides
+$background-solid-hover: #4A90E2; // Bleu vif au survol
 
-$border-color-subtle: #D1D1D1;    
-$background-component: #F6F6F6;   
+$border-color-subtle: #E0E6ED;    // Gris très clair pour des bordures douces
+$background-component: #FFFFFF;   // Blanc pur pour un design épuré
+
+$background-dark: #1a1a1a;
+$text-color-light: #f5f5f5; 
 
 $breakpoints: (
   small: 350px,

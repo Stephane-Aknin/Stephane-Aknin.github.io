@@ -1,3 +1,5 @@
+@use "../annexes/variables" as vars;  // Déplacer cette ligne en haut
+
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap");
 
 * {
@@ -9,21 +11,21 @@
 
 body {
   margin: 0 15vw;
-  background-color: $background-color;
-  color: $text-color;
+  background-color: vars.$background-color;
+  color: vars.$text-color;
 
-  style button {
-    color: $text-color;
+  button {
+    color: vars.$text-color;
   }
 }
 
-@media screen and (max-width: #{map-get($breakpoints, large)}) {
+@media screen and (max-width: map-get(vars.$breakpoints, xlarge)) {
   body {
     margin: 0 10vw;
   }
 }
 
-@media screen and (max-width: #{map-get($breakpoints, medium)}) {
+@media screen and (max-width: map-get(vars.$breakpoints, medium)) {
   body {
     margin: 0 3vw;
   }
