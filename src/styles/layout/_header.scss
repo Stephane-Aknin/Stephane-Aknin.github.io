@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
+  margin-bottom: 1.5rem;
   background-color: vars.$background-color;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -14,7 +15,7 @@
 
   .dark & {
     background-color: vars.$background-dark;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Ombre claire en mode sombre */
   }
 }
 
@@ -31,10 +32,11 @@
     &:hover {
       transform: scale(1.1);
     }
-  }
 
-  .dark button {
-    color: vars.$text-color-light;
+    .dark & {
+      color: vars.$text-color-light; /* Assure-toi que la couleur est bien définie */
+      
+    }
   }
 }
 
@@ -75,7 +77,7 @@
   }
 
   .dark .header__nav .nav__list li a {
-    color: vars.$text-color-light;
+    color: vars.$text-color-light; /* Liens clairs en mode sombre */
   }
 }
 

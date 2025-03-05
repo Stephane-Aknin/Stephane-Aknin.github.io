@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Sun, Menu, X } from "lucide-react";
+import { Sun, Moon, Menu, X } from "lucide-react"; // Ajouter l'icône Moon
 
 const Header = () => {
   const location = useLocation();
@@ -37,7 +37,7 @@ const Header = () => {
     if (location.pathname !== "/") {
       // Stocke l'ancre et redirige vers Home.jsx
       sessionStorage.setItem("scrollTo", anchor);
-      navigate("/");
+      navigate("/"); 
     } else {
       // Si déjà sur Home, scrolle directement
       scrollToAnchor(anchor);
@@ -73,7 +73,7 @@ const Header = () => {
       {/* Bouton Dark Mode */}
       <div className="header__button">
         <button onClick={toggleDarkMode}>
-          <Sun className="sun__icone" />
+          {isDarkMode ? <Moon className="moon__icone" /> : <Sun className="sun__icone" />} {/* Afficher Moon ou Sun selon le mode */}
         </button>
       </div>
     </header>
