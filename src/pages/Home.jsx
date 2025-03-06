@@ -8,32 +8,45 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   useEffect(() => {
-    // Vérifie s'il existe une ancre stockée en session (par exemple, après une redirection)
+    // ✅ Mise à jour du titre et de la meta description pour le SEO
+    document.title = "Accueil - Arnaud Guillemin | Développeur Web";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Découvrez mes compétences et projets en développement web. Spécialiste React et intégration front-end.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Découvrez mes compétences et projets en développement web. Spécialiste React et intégration front-end.";
+      document.head.appendChild(meta);
+    }
+
+    // ✅ Vérifie s'il y a une ancre à scroller
     const anchor = sessionStorage.getItem("scrollTo");
     if (anchor) {
-      sessionStorage.removeItem("scrollTo"); // Supprime l'entrée après utilisation pour éviter un scroll intempestif
+      sessionStorage.removeItem("scrollTo");
 
       setTimeout(() => {
-        const section = document.querySelector(anchor); // Sélectionne l'élément correspondant à l'ancre
+        const section = document.querySelector(anchor);
         if (section) {
-          section.scrollIntoView({ behavior: "smooth", block: "start" }); // Défilement fluide vers la section
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
         }
-      }, 300); // Délai pour s'assurer que le DOM est bien chargé avant d'exécuter le scroll
+      }, 300);
     }
-  }, []); // useEffect s'exécute une seule fois après le montage du composant
+  }, []);
 
   return (
     <div className="home">
-      <Header /> {/* En-tête de la page */}
+      <Header />
       <main>
-        <Hero /> {/* Section "À propos" */}
+        <Hero />
         <div className="home__container">
-          <Skills /> {/* Section compétences */}
-          <Works /> {/* Section des projets réalisés */}
+          <Skills />
+          <Works />
         </div>
-        <Contact /> {/* Section contact */}
+        <Contact />
       </main>
-      <Footer /> {/* Pied de page */}
+      <Footer />
     </div>
   );
 };
