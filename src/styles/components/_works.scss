@@ -1,4 +1,6 @@
 @use "../annexes/variables" as vars;
+@use 'sass:map';
+
 
 .works__box {
   display: flex;
@@ -20,7 +22,7 @@
   }
 }
 
-@media screen and (max-width: #{map-get(vars.$breakpoints, medium)}) {
+@media screen and (max-width: #{map.get(vars.$breakpoints, medium)}) {
   .works__box {
     width: 100%;
     height: 400px;

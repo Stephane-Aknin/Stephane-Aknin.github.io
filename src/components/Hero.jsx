@@ -1,11 +1,11 @@
 import Social from "./Social";
-import heroImage from "../images/profile.jpg";
+import heroImage from "../images/profile.webp";
 
 const Hero = () => {
   return (
     <div id="a-propos" className="hero__container">
       <div className="hero__content">
-        
+        {/* ✅ Ajout d'un h1 pour le SEO */}
         <h1 className="visually-hidden">Arnaud Guillemin - Développeur Web et Intégrateur</h1>
 
         <h2>À propos</h2>
@@ -27,8 +27,19 @@ const Hero = () => {
 
         <Social />
       </div>
+      
+      {/* ✅ Optimisation de l'image */}
       <div className="hero__image">
-        <img src={heroImage} alt="Arnaud Guillemin" />
+        <picture>
+          <source srcSet={heroImage} type="image/webp" />
+          <img 
+            src={heroImage} 
+            alt="Photo de Arnaud Guillemin, Développeur Web et Intégrateur"
+            loading="lazy" 
+            width="300" 
+            height="300"
+          />
+        </picture>
       </div>
     </div>
   );

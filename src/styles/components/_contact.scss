@@ -1,4 +1,6 @@
 @use "../annexes/variables" as vars;
+@use 'sass:map';
+
 
 .contact__container {
   display: flex;
@@ -94,7 +96,7 @@
 }
 
 // RESPONSIVE DESIGN
-@media screen and (max-width: #{map-get(vars.$breakpoints, medium)}) {
+@media screen and (max-width: #{map.get(vars.$breakpoints, medium)}) {
   .contact__container {
     margin: 30px auto;
     padding: 30px;

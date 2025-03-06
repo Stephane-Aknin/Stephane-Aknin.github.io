@@ -1,4 +1,6 @@
 @use "../annexes/variables" as vars;
+@use 'sass:map';
+
 
 .social__container {
   display: flex;
@@ -22,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: #{map-get(vars.$breakpoints, medium)}) {
+@media screen and (max-width: #{map.get(vars.$breakpoints, medium)}) {
   .social__container {
     padding-top: 5px;
     gap: 20px;

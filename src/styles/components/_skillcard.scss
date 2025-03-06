@@ -1,4 +1,6 @@
 @use "../annexes/variables" as vars;
+@use 'sass:map';
+
 
 .skill__card {
   display: flex;
@@ -49,7 +51,7 @@
   color: black;
 }
 
-@media screen and (max-width: #{map-get(vars.$breakpoints, medium)}) {
+@media screen and (max-width: #{map.get(vars.$breakpoints, medium)}) {
   .skill__card {
     gap: 10px;
     padding: 10px;

@@ -1,4 +1,6 @@
 @use "../annexes/variables" as vars;
+@use 'sass:map';
+
 
 .error {
   display: flex;
@@ -15,7 +17,7 @@
     font-weight: 700;
     margin: 0;
 
-    @media screen and (max-width: #{map-get(vars.$breakpoints, large)}) {
+    @media screen and (max-width: #{map.get(vars.$breakpoints, large)}) {
       font-size: 96px;
       margin: 190px 0 16px 0;
     }
@@ -30,7 +32,7 @@
     font-weight: 500;
     margin: 70px 0 0 0;
 
-    @media screen and (max-width: #{map-get(vars.$breakpoints, large)}) {
+    @media screen and (max-width: #{map.get(vars.$breakpoints, large)}) {
       font-size: 16px;
       margin: 0 11%;
     }
@@ -45,7 +47,7 @@
     font-weight: 500;
     margin: 48px 0 32px 0;
 
-    @media screen and (max-width: #{map-get(vars.$breakpoints, large)}) {
+    @media screen and (max-width: #{map.get(vars.$breakpoints, large)}) {
       font-size: 14px;
       margin-top: 110px;
     }

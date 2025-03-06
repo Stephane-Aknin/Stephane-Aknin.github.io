@@ -1,4 +1,6 @@
 @use "../annexes/variables" as vars;
+@use 'sass:map';
+
 
 .footer__container {
   display: flex;
@@ -9,7 +11,7 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: #{map-get(vars.$breakpoints, medium)}) { /* Utilisation de vars pour accéder à $breakpoints */
+@media screen and (max-width: #{map.get(vars.$breakpoints, medium)}) { /* Utilisation de vars pour accéder à $breakpoints */
   .footer__container {
     font-size: 16px;
     margin: 30px;

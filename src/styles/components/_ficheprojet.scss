@@ -1,4 +1,6 @@
 @use "../annexes/variables" as vars;
+@use 'sass:map';
+
 
 .fiche__projet {
   border-left: 2px solid vars.$border-color;
@@ -13,17 +15,17 @@
   padding: 0 40px 40px 40px;
   width: 50%;
 
-  @media screen and (max-width: #{map-get(vars.$breakpoints, large)}) {
+  @media screen and (max-width: #{map.get(vars.$breakpoints, large)}) {
     padding: 0 30px 30px 30px;
     width: 60%;
   }
 
-  @media screen and (max-width: #{map-get(vars.$breakpoints, medium)}) {
+  @media screen and (max-width: #{map.get(vars.$breakpoints, medium)}) {
     padding: 0 20px 20px 20px;
     width: 70%;
   }
 
-  @media screen and (max-width: #{map-get(vars.$breakpoints, small)}) {
+  @media screen and (max-width: #{map.get(vars.$breakpoints, small)}) {
     padding: 0 10px 10px 10px;
     width: 80%;
   }
@@ -37,11 +39,11 @@
   justify-content: center;
   width: 30%;
 
-  @media screen and (max-width: #{map-get(vars.$breakpoints, medium)}) {
+  @media screen and (max-width: #{map.get(vars.$breakpoints, medium)}) {
     gap: 10px;
   }
 
-  @media screen and (max-width: #{map-get(vars.$breakpoints, small)}) {
+  @media screen and (max-width: #{map.get(vars.$breakpoints, small)}) {
     gap: 5px;
     align-items: flex-start;
     margin-left: 20px;
