@@ -8,8 +8,9 @@
         "/images/kasa-apropos.webp",
         "/images/kasa-logement.webp"
       ],
-      "lienrepo": "https://github.com/Halimsahin/Openclassrooms-Projet7_Kasa_Halim_Sahin",
+      "lienrepo": "https://github.com/GlMlL/Projet-8-kasa.git",
       "littletitle": "Kasa",
+      "lienGitHubPages": "https://glmll.github.io/Projet-8-kasa/",
       "littledescription": "Projet react d'une application immobilière"
     },
     {
@@ -23,7 +24,8 @@
         "/images/724event-team.webp",
         "/images/724event-contact.webp"
       ],
-      "lienrepo": "https://github.com/Halimsahin/Openclassrooms-Projet9_724Event_Halim_Sahin",
+      "lienrepo": "https://github.com/GlMlL/724events.git",
+      "lienGitHubPages": "https://glmll.github.io/724events/",  
       "littletitle": "724 Event",
       "littledescription": "Projet de débugage d'un site d'évènement"
     },
@@ -36,7 +38,7 @@
         "/images/argentbank-login.webp",
         "/images/argentbank-user.webp"
       ],
-      "lienrepo": "https://github.com/Halimsahin/Openclassrooms-Projet10_ArgentBank_Halim_Sahin",
+      "lienrepo": "https://github.com/GlMlL/ArgentBank-Frontend.git",
       "littletitle": "Argent Bank",
       "littledescription": "Projet react avec API d'un site bancaire"
     }

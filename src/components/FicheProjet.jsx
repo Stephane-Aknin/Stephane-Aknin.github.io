@@ -4,11 +4,12 @@ import Carrousel from "./Carrousel";
 import GithubIcone from "../images/GithubIcone";
 import HtmlCssIcone from "../images/HtmlCssIcone";
 import ReactIcone from "../images/ReactIcone";
+import { FaExternalLinkAlt } from "react-icons/fa"; // Import de l'icône pour GitHub Pages
 
 const FicheProjet = () => {
   // Récupération de l'ID du projet depuis l'URL
   const { id } = useParams();
-  
+
   // États pour stocker les données du projet et le statut du chargement
   const [ficheProjet, setFicheProjet] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -49,10 +50,15 @@ const FicheProjet = () => {
       {/* Section contenant les liens et icônes techniques */}
       <div className="fiche__aside">
         {/* Lien vers le dépôt GitHub du projet */}
-        <a href={ficheProjet.lienrepo} aria-label="Github" target="_blank">
+        <a href={ficheProjet.lienrepo} aria-label="Github" target="_blank" rel="noopener noreferrer">
           <GithubIcone />
         </a>
-        
+
+        {/* Lien vers GitHub Pages du projet avec une icône */}
+        <a href={ficheProjet.lienGitHubPages} aria-label="GitHub Pages" target="_blank" rel="noopener noreferrer" className="github-pages-link">
+          <FaExternalLinkAlt /> {/* Icône de lien externe */}
+        </a>
+
         {/* Icônes des technologies utilisées */}
         <div className="fiche__technique">
           <HtmlCssIcone />
