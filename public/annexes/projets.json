@@ -2,7 +2,7 @@
     {
       "id": "c67ab8a7",
       "title": "Projet Kasa",
-      "description": "Le projet Kasa est une application React de location immobilière, sur ce projet que je devais monter de zéro j'ai créer la structure et les différents composants de l'application web à l'aide de React.",
+      "description": "Le projet Kasa est une application web de location immobilière réalisée avec React. J'ai développé l'ensemble de l'application à partir de zéro, en créant la structure, les composants React et en intégrant React Router pour la gestion des routes. J'ai suivi les maquettes Figma pour assurer une interface responsive, tout en garantissant un code de qualité.",
       "pictures": [
         "/images/kasa-homepage.webp",
         "/images/kasa-apropos.webp",

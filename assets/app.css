@@ -358,9 +358,12 @@ body button {
   border-radius: 20px;
   background-color: #DCE4EC;
 }
+.w-card {
+  transition: transform 0.3s ease, border 0.3s ease; /* Ajoute une transition fluide */
+}
 .w-card:hover {
-  background-color: #4A90E2;
-  border: 1px solid #3A6EA5;
+  transform: scale(1.05); /* Légère augmentation de la taille */
+  border: 1px solid #3A6EA5; /* Conserver la bordure */
 }
 .w-card:active {
   background-color: #C7D0DD;

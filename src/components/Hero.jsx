@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import { memo } from 'react';
 import Social from "./Social";
 import heroImage from "../images/profile.webp";
 
