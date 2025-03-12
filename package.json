@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://glmll.github.io/portfolio",  // Remplace par l'URL de ton dépôt GitHub Pages
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"  // Ajout du script de déploiement
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -30,6 +32,7 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",  // Dépendance pour déployer sur GitHub Pages
     "globals": "^15.15.0",
     "terser": "^5.39.0",
     "vite": "^6.2.0"

@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
-    <>
+    
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
-    </>
+    
   );
 }
 
