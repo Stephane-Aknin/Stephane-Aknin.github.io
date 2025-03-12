@@ -21,7 +21,7 @@ const FicheProjet = () => {
     window.scrollTo(0, 0);
 
     // Simule un appel API pour récupérer les projets depuis un fichier JSON
-    fetch("/portfolio/annexes/projets.json")
+    fetch("/annexes/projets.json")
       .then((response) => response.json()) // Conversion de la réponse en JSON
       .then((data) => {
         // Recherche du projet correspondant à l'ID récupéré dans l'URL

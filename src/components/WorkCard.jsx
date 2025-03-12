@@ -8,7 +8,7 @@ const WorkCard = () => {
 
   useEffect(() => {
     // Récupération des données des projets depuis le fichier JSON
-    fetch("portfolio/annexes/projets.json")
+    fetch("/annexes/projets.json")
       .then((response) => response.json())
       .then((data) => {
         setProjets(data); // Mise à jour de l'état avec les projets récupérés
