@@ -5,6 +5,7 @@ import GithubIcone from "../images/GithubIcone";
 import HtmlCssIcone from "../images/HtmlIcone";
 import ReactIcone from "../images/ReactIcone";
 import JavascriptIcone from "../images/JavascriptIcone";
+import CssIcone from "../images/CssIcone";
 
 
 const FicheProjet = () => {
@@ -64,6 +65,7 @@ const FicheProjet = () => {
         {/* Icônes des technologies utilisées */}
         <div className="fiche__technique">
           <HtmlCssIcone />
+          <CssIcone />
           <ReactIcone />
           <JavascriptIcone/>
         </div>
