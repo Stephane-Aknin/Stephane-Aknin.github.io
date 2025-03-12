@@ -1,4 +1,5 @@
-import HtmlCssIcone from "../images/HtmlCssIcone";
+import HtmlIcone from "../images/HtmlIcone";
+import CssIcone from "../images/CssIcone";
 import JavascriptIcone from "../images/JavascriptIcone";
 import ReactIcone from "../images/ReactIcone";
 
@@ -6,14 +7,14 @@ const SkillCard = () => {
   return (
     <div className="skill__card">
       <div className="s-card">
-        <HtmlCssIcone />
+        <HtmlIcone />
         <div className="s-card__content">
           <h3>HTML </h3>
           <p>Le squelette de la pages</p>
         </div>
       </div>
       <div className="s-card">
-        <HtmlCssIcone />
+        <CssIcone />
         <div className="s-card__content">
           <h3>CSS </h3>
           <p>Le style de la pages</p>

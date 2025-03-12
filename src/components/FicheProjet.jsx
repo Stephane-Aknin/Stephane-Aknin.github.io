@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import Carrousel from "./Carrousel";
 import GithubIcone from "../images/GithubIcone";
-import HtmlCssIcone from "../images/HtmlCssIcone";
+import HtmlCssIcone from "../images/HtmlIcone";
 import ReactIcone from "../images/ReactIcone";
 import JavascriptIcone from "../images/JavascriptIcone";
 import { FaExternalLinkAlt } from "react-icons/fa"; // Import de l'icône pour GitHub Pages
