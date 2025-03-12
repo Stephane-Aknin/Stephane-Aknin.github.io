@@ -3,7 +3,7 @@ import SkillCard from "./SkillCard";
 const Skills = () => {
   return (
     <div id="competences-projets" className="skills__box">
-      <h2>Skills</h2>
+      <h2>Compétences</h2>
       <SkillCard />
     </div>
   );

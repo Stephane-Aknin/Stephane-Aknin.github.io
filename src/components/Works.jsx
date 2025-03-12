@@ -3,7 +3,7 @@ const Works = () => {
   return (
     <div className="works__box">
       <h2>
-        Works <span>- cliquez pour ouvrir</span>
+        Projets <span>- cliquez pour ouvrir</span>
       </h2>
       <WorkCard />
     </div>
