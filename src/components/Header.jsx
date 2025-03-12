@@ -64,9 +64,9 @@ const Header = () => {
       {/* Navigation */}
       <nav className={`header__nav ${menuOpen ? "open" : ""}`}>
         <ul className="nav__list">
-          <li><a href="/#a-propos" onClick={(e) => handleNavigation(e, "#a-propos")}>À propos</a></li>
-          <li><a href="/#competences-projets" onClick={(e) => handleNavigation(e, "#competences-projets")}>Compétences / Projets</a></li>
-          <li><a href="/#contact" onClick={(e) => handleNavigation(e, "#contact")}>Contact</a></li>
+          <li><a href="/portfolio/#a-propos" onClick={(e) => handleNavigation(e, "#a-propos")}>À propos</a></li>
+          <li><a href="/portfolio/#competences-projets" onClick={(e) => handleNavigation(e, "#competences-projets")}>Compétences / Projets</a></li>
+          <li><a href="/portfolio/#contact" onClick={(e) => handleNavigation(e, "#contact")}>Contact</a></li>
         </ul>
       </nav>
 
