@@ -41,6 +41,20 @@
       "lienrepo": "https://github.com/GlMlL/ArgentBank-Frontend.git",
       "littletitle": "Argent Bank",
       "littledescription": "Projet react avec API d'un site bancaire"
+    },
+    {
+      "id": "e4f7c9d1",
+      "title": "Projet Nina Carducci",
+      "description": "J'ai optimisé le site en améliorant les performances et le SEO, tout en mettant en place le référencement local avec Schema.org. J'ai également ajouté les métadonnées pour les réseaux sociaux et apporté les ajustements nécessaires pour renforcer l'accessibilité. Enfin, j'ai réalisé un rapport d'optimisation détaillant les actions effectuées et leurs impacts.",
+      "pictures": [
+        "/images/Nina-Carducci-portfolio.webp",
+        "/images/Nina-Carducci-carrousel.webp",
+        "/images/Nina-Carducci-services.webp"
+      ],
+      "lienrepo": "https://github.com/GlMlL/nina-carducci.git",
+      "lienGitHubPages": "https://glmll.github.io/nina-carducci/", 
+      "littletitle": "Nina Carducci",
+      "littledescription": "Optimisation des performances et du SEO d'un site "
     }
   ]
   

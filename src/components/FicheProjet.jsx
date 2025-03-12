@@ -4,6 +4,7 @@ import Carrousel from "./Carrousel";
 import GithubIcone from "../images/GithubIcone";
 import HtmlCssIcone from "../images/HtmlCssIcone";
 import ReactIcone from "../images/ReactIcone";
+import JavascriptIcone from "../images/JavascriptIcone";
 import { FaExternalLinkAlt } from "react-icons/fa"; // Import de l'icône pour GitHub Pages
 
 const FicheProjet = () => {
@@ -54,15 +55,17 @@ const FicheProjet = () => {
           <GithubIcone />
         </a>
 
-        {/* Lien vers GitHub Pages du projet avec une icône */}
-        <a href={ficheProjet.lienGitHubPages} aria-label="GitHub Pages" target="_blank" rel="noopener noreferrer" className="github-pages-link">
-          <FaExternalLinkAlt /> {/* Icône de lien externe */}
-        </a>
+        {/* Lien vers GitHub Pages du projet avec un texte explicite */}
+<a href={ficheProjet.lienGitHubPages} aria-label="Voir le site en ligne" target="_blank" rel="noopener noreferrer" className="github-pages-link">
+  Voir le site en ligne
+</a>
+
 
         {/* Icônes des technologies utilisées */}
         <div className="fiche__technique">
           <HtmlCssIcone />
           <ReactIcone />
+          <JavascriptIcone/>
         </div>
       </div>
 

@@ -8,8 +8,15 @@ const SkillCard = () => {
       <div className="s-card">
         <HtmlCssIcone />
         <div className="s-card__content">
-          <h3>HTML - CSS</h3>
-          <p>Le squelette et le style de toutes pages</p>
+          <h3>HTML </h3>
+          <p>Le squelette de la pages</p>
+        </div>
+      </div>
+      <div className="s-card">
+        <HtmlCssIcone />
+        <div className="s-card__content">
+          <h3>CSS </h3>
+          <p>Le style de la pages</p>
         </div>
       </div>
       <div className="s-card">
