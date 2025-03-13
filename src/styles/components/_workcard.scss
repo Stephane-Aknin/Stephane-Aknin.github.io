@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  
 }
 
 .w-card {
@@ -18,12 +19,12 @@
   background-color: vars.$background-color-secondary;
 
   & {
-    transition: transform 0.3s ease, border 0.3s ease; /* Ajoute une transition fluide */
+    transition: transform 0.3s ease, border 0.3s ease; 
   }
   
   &:hover {
-    transform: scale(1.05); /* Légère augmentation de la taille */
-    border: 1px solid vars.$border-color-hover; /* Conserver la bordure */
+    transform: scale(1.05); 
+    border: 1px solid vars.$border-color-hover; 
   }
   
 
@@ -52,11 +53,12 @@
   flex-direction: column;
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
   }
 }
 
