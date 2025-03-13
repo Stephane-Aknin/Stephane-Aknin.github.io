@@ -10,7 +10,6 @@
       ],
       "lienrepo": "https://github.com/GlMlL/Projet-8-kasa.git",
       "littletitle": "Kasa",
-      "lienGitHubPages": "https://glmll.github.io/Projet-8-kasa/",
       "littledescription": "Projet react d'une application immobilière"
     },
     {
@@ -24,8 +23,7 @@
         "/images/724event-team.webp",
         "/images/724event-contact.webp"
       ],
-      "lienrepo": "https://github.com/GlMlL/724events.git",
-      "lienGitHubPages": "https://glmll.github.io/724events/",  
+      "lienrepo": "https://github.com/GlMlL/724events.git",  
       "littletitle": "724 Event",
       "littledescription": "Projet de débugage d'un site d'évènement"
     },
@@ -52,7 +50,7 @@
         "/images/Nina-Carducci-services.webp"
       ],
       "lienrepo": "https://github.com/GlMlL/nina-carducci.git",
-      "lienGitHubPages": "https://glmll.github.io/nina-carducci/", 
+      
       "littletitle": "Nina Carducci",
       "littledescription": "Optimisation des performances et du SEO "
     }

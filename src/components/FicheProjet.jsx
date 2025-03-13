@@ -56,10 +56,7 @@ const FicheProjet = () => {
           <GithubIcone />
         </a>
 
-        {/* Lien vers GitHub Pages du projet avec un texte explicite */}
-<a href={ficheProjet.lienGitHubPages} aria-label="Voir le site en ligne" target="_blank" rel="noopener noreferrer" className="github-pages-link">
-  Voir le site en ligne
-</a>
+   
 
 
         {/* Icônes des technologies utilisées */}
