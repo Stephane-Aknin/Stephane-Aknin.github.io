@@ -10,14 +10,14 @@ const SkillCard = () => {
         <HtmlIcone />
         <div className="s-card__content">
           <h3>HTML </h3>
-          <p>Le squelette de la pages</p>
+          <p>Le squelette de la page</p>
         </div>
       </div>
       <div className="s-card">
         <CssIcone />
         <div className="s-card__content">
           <h3>CSS </h3>
-          <p>Le style de la pages</p>
+          <p>Le style de la page</p>
         </div>
       </div>
       <div className="s-card">
