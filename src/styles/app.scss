@@ -57,7 +57,7 @@ body.dark .footer {
 
 // Appliquer l'image de fond dans le body
 body {
-  background-image: url('src/images/back-image.webp');
+  background-image: url('/images/back-image.webp');
   background-size: cover;  // L'image couvrira tout l'écran
   background-position: center;  // Centrer l'image
   background-attachment: fixed;  // L'image restera fixe lors du défilement de la page
