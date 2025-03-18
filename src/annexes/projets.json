@@ -1,0 +1,55 @@
+[
+    {
+      "id": "c67ab8a7",
+      "title": "Élagage d'arbres : Un entretien essentiel pour la sécurité et l'esthétique",
+      "description": "L'élagage est une opération essentielle pour maintenir la santé des arbres, éviter les nuisances et garantir la sécurité. Cette intervention consiste à couper sélectivement les branches pour éviter qu'elles n'empiètent sur les propriétés voisines ou les infrastructures, tout en préservant la forme et la santé de l'arbre.En plus d’être bénéfique pour l’arbre, l’élagage prévient les risques de chutes de branches et de dommages aux bâtiments ou aux personnes. La réglementation impose au propriétaire de réaliser l’élagage des arbres de son terrain et de respecter les distances légales avec la propriété voisine.Nos experts en élagage assurent des interventions sécurisées, maîtrisées et adaptées à chaque situation, y compris dans des zones complexes, près de maisons ou d’infrastructures. Faites appel à des professionnels qualifiés pour un entretien optimal de vos espaces verts.",
+      "pictures": [
+        "/images/elagage-1",
+        "/images/elagage-2",
+        "/images/elagage-3",
+        "/images/elagage-4"
+      ],
+      "lienrepo": "https://github.com/GlMlL/Projet-8-kasa.git",
+      "littletitle": "Chantier d'élagage",
+      "littledescription": "en image"
+    },
+    {
+      "id": "b9123946",
+      "title": "Abattage d'arbres : Sécurisé et adapté à vos besoins",
+      "description":"Spécialistes en abattage d'arbres, nous proposons des interventions adaptées à chaque situation. Le démontage d'un arbre, essentiel pour garantir la sécurité et l'efficacité de l'opération, permet de supprimer l'arbre dans des espaces réduits ou près d'infrastructures, comme les lignes électriques. Nos équipes utilisent des techniques de démontage pour couper l'arbre section par section, tout en préservant l'environnement et en limitant les risques. Selon les besoins, nous choisissons la méthode la plus adaptée à votre chantier. Grâce à notre matériel professionnel et nos équipements certifiés, nous assurons des prestations de qualité dans les meilleures conditions de sécurité.",
+      "pictures": [
+        
+      ],
+      "lienrepo": "https://github.com/GlMlL/724events.git",  
+      "littletitle": "Chantier d'un abattage",
+      "littledescription": "en image"
+    },
+    {
+      "id": "46d188c5",
+      "title": "Démontage d'un Pin Maritime - Technique de Rétention",
+      "description": "Lors de ce chantier, nous avons procédé au démontage d’un pin maritime de 15 mètres de haut, situé dans un jardin proche d’une maison. En raison de l’espace limité et des risques de dommages aux infrastructures avoisinantes, nous avons utilisé la technique de rétention pour contrôler la chute des branches. Grâce à des cordes et des poulies, chaque branche a été coupée de manière précise et descendue en toute sécurité, évitant ainsi tout impact sur les bâtiments alentours. Découvrez, étape par étape, le démontage maîtrisé de cet arbre, réalisé dans le respect des normes de sécurité et de l’environnement.",
+      "pictures": [
+        "/images/demontage-1.webp",
+        "/images/demontage-2.webp",
+        "/images/demontage-3.webp",
+        "/images/demontage-4.webp",
+        "/images/demontage-5.webp"
+      ],
+      "lienrepo": "https://github.com/GlMlL/ArgentBank-Frontend.git",
+      "littletitle": "Chantier de démontage",
+      "littledescription": "en image"
+    },
+    {
+      "id": "e4f7c9d1",
+      "title": "Le recyclage de vos déchets verts : un geste écologique et responsable",
+      "description": "Dans le cadre de nos prestations, nous nous engageons à recycler l'intégralité de vos déchets verts, contribuant ainsi à la préservation de l'environnement. Chaque geste que nous effectuons vise à réduire l'impact écologique et à favoriser la réutilisation des ressources naturelles.Les branches sont broyées en copeaux, qui sont ensuite offerts gratuitement aux communes et aux copropriétés. Ces copeaux servent de paillage naturel, réduisant le besoin en produits phytosanitaires et empêchant la croissance des mauvaises herbes tout en apportant un bel aspect décoratif à vos espaces extérieurs.Les déchets de taille sont également recyclés pour créer ces mêmes copeaux décoratifs. Par ailleurs, les tontes de gazon et les feuilles récoltées sont redistribuées aux agriculteurs locaux, qui les utilisent pour nourrir leurs sols en matière organique, enrichissant ainsi la terre. Nous privilégions l’utilisation de tronçonneuses électriques, réduisant les nuisances sonores et minimisant notre empreinte carbone, pour un entretien de vos espaces verts en toute sérénité.",
+      "pictures": [
+       
+      ],
+      "lienrepo": "https://github.com/GlMlL/nina-carducci.git",
+      
+      "littletitle": "Broyage et évacuation",
+      "littledescription": "des déchets verts "
+    }
+  ]
+  
