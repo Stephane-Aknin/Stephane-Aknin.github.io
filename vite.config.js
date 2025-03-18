@@ -5,14 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
    
-  // Spécifier le chemin de base pour GitHub Pages
-  base: '/Stephane-Aknin.github.io/',  // Nom de ton dépôt
-
+   
   build: {
-    minify: 'terser',
+    minify: 'terser', 
     terserOptions: {
       compress: {
-        drop_console: true,  // Supprimer les console.logs dans le build
+        drop_console: true, 
       },
     },
   },
