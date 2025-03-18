@@ -54,3 +54,13 @@ body.dark .content {
 body.dark .footer {
   background-color: #2a2a2a; 
 }
+
+// Appliquer l'image de fond dans le body
+body {
+  background-image: url('src/images/back-image.webp');
+  background-size: cover;  // L'image couvrira tout l'écran
+  background-position: center;  // Centrer l'image
+  background-attachment: fixed;  // L'image restera fixe lors du défilement de la page
+  background-repeat: no-repeat;  // Empêcher la répétition de l'image
+}
+

@@ -1,39 +1,37 @@
-import HtmlIcone from "../images/HtmlIcone";
-import CssIcone from "../images/CssIcone";
-import JavascriptIcone from "../images/JavascriptIcone";
-import ReactIcone from "../images/ReactIcone";
+
 
 const SkillCard = () => {
   return (
     <div className="skill__card">
       <div className="s-card">
-        <HtmlIcone />
+        <div className="s-card__icon">🌳</div>
         <div className="s-card__content">
-          <h3>HTML </h3>
-          <p>Le squelette de la page</p>
+          <h3>Élagage et Taille</h3>
+          <p>Entretenir et former les arbres en toute sécurité</p>
         </div>
       </div>
       <div className="s-card">
-        <CssIcone />
+        <div className="s-card__icon">🪓</div>
         <div className="s-card__content">
-          <h3>CSS </h3>
-          <p>Le style de la page</p>
+          <h3>Abattage</h3>
+          <p>Supprimer les arbres dangereux ou malades</p>
         </div>
       </div>
       <div className="s-card">
-        <JavascriptIcone />
+        <div className="s-card__icon">🔗</div>
         <div className="s-card__content">
-          <h3>JavaScript</h3>
-          <p>Rend les pages dynamiques et interactives</p>
+          <h3>Démontage</h3>
+          <p>Retirer les arbres en zone difficile par morceaux</p>
         </div>
       </div>
       <div className="s-card">
-        <ReactIcone />
+        <div className="s-card__icon">🚜</div>
         <div className="s-card__content">
-          <h3>React</h3>
-          <p>Création de composants et performances</p>
+          <h3>Broyage et Évacuation</h3>
+          <p>Gestion des déchets verts et nettoyage du site</p>
         </div>
       </div>
+      
     </div>
   );
 };

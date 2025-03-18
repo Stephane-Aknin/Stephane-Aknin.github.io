@@ -1,21 +1,15 @@
-import GithubIcone from "../images/GithubIcone";
-import LinkedinIcone from "../images/LinkedinIcone";
+
+import FacebookIcone from "../images/FacebookIcone";
 const Social = () => {
   return (
     <div className="social__container">
+      
       <a
-        href="https://github.com/GlMlL?tab=repositories"
-        aria-label="Github"
-        target="_blank"
-      >
-        <GithubIcone />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/arnaud-guillemin-464100260/"
+        href="https://www.facebook.com/lebucherondoleron/"
         aria-label="Linkedin"
         target="_blank"
       >
-        <LinkedinIcone />
+        <FacebookIcone />
       </a>
     </div>
   );

@@ -93,6 +93,14 @@ function Contact() {
           {/* Bouton d'envoi */}
           <button type="submit">Envoyer</button>
         </form>
+
+        {/* Ajout des coordonnées sous le formulaire */}
+        <div className="contact__info">
+          <h3>Mes coordonnées</h3>
+          <p><strong>Téléphone :</strong> <a href="tel:+33618528585">06 18 52 85 85</a></p>
+          <p><strong>Adresse :</strong> 34 rue Glacière, 17480 Le Château d&apos;Oléron</p>
+
+        </div>
       </div>
     </div>
   );

@@ -6,50 +6,44 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 4rem 5.5rem;
+  padding: 4rem 0.5rem;
   width: 100%;
-  background: radial-gradient(circle, vars.$background-color, vars.$background-solid);
-  border-radius: 20px;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08); // Réduit pour de meilleures performances
+  position: relative; /* Nécessaire pour positionner le ::before correctement */
+  
+  background: url('src/images/back-sun.webp') no-repeat center center/cover;
+  
+}
+
+.hero__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Réduction de l'opacité (40%) */
 }
 
 .hero__content {
   width: 50%;
   padding-right: 2rem;
-  animation: fadeIn 0.8s ease-in-out; // Durée réduite pour un rendu plus rapide
+  animation: fadeIn 0.8s ease-in-out;
+  position: relative; /* Positionner le contenu au-dessus de la superposition */
+  
+  /* Modification de la couleur du texte et ajout d'ombre pour améliorer la lisibilité */
+  color: white; /* Texte en blanc pour un bon contraste */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour améliorer la visibilité */
+}
 
-  h2 {
-    font-size: 2.5rem;
-    color: vars.$text-color;
-    margin-bottom: 1rem;
-    position: relative;
-  }
-
-  h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: vars.$primary-color;
-    margin-top: 5px;
-  }
-
-  p {
-    font-size: 1.1rem;
-    color: black;
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
-
-    strong {
-      color: vars.$primary-color;
-    }
-  }
+.hero__content, ul{
+  list-style: none;
 }
 
 .hero__image {
   width: 40%;
   display: flex;
   justify-content: center;
+  z-index: 1;
 
   img {
     width: 220px;
@@ -76,6 +70,15 @@
   white-space: nowrap;
   border: 0;
 }
+
+div.social-container {
+  background-color: white;       /* Fond blanc */
+  border-radius: 15px;           /* Bords arrondis */
+  padding: 20px;                 /* Espacement autour du contenu */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner du relief */
+  display: inline-block;         /* Afficher en bloc en ligne pour ne pas prendre toute la largeur */
+}
+
 
 @media screen and (max-width: 900px) {
   .hero__container {

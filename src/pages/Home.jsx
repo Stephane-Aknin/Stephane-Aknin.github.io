@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 const Home = () => {
   useEffect(() => {
     // ✅ Mise à jour du titre et de la meta description pour le SEO
-    document.title = "Accueil - Arnaud Guillemin | Développeur Web";
+    document.title = "Aknin Stéphane Arboriste Grimpeur";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -17,7 +17,7 @@ const Home = () => {
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Découvrez mes compétences et projets en développement web. Spécialiste React et intégration front-end.";
+      meta.content = "Arboriste Grimpeur, élagueur sur l'Ile d'Oléron Abattage élagage sur corde,Taille et soins des arbres";
       document.head.appendChild(meta);
     }
 

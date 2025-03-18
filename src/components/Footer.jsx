@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="footer__container">
-      <p>Arnaud guillemin © 2025</p>
+      <p>Aknin Stéphane Arboriste Grimpeur © 2025</p>
     </div>
   );
 };

@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import Carrousel from "./Carrousel";
-import GithubIcone from "../images/GithubIcone";
-import HtmlCssIcone from "../images/HtmlIcone";
-import ReactIcone from "../images/ReactIcone";
-import JavascriptIcone from "../images/JavascriptIcone";
-import CssIcone from "../images/CssIcone";
 
 
 const FicheProjet = () => {
@@ -49,24 +44,7 @@ const FicheProjet = () => {
         <p>{ficheProjet.description}</p>
       </div>
 
-      {/* Section contenant les liens et icônes techniques */}
-      <div className="fiche__aside">
-        {/* Lien vers le dépôt GitHub du projet */}
-        <a href={ficheProjet.lienrepo} aria-label="Github" target="_blank" rel="noopener noreferrer">
-          <GithubIcone />
-        </a>
-
-   
-
-
-        {/* Icônes des technologies utilisées */}
-        <div className="fiche__technique">
-          <HtmlCssIcone />
-          <CssIcone />
-          <ReactIcone />
-          <JavascriptIcone/>
-        </div>
-      </div>
+      
 
       {/* Carrousel d'images du projet */}
       <Carrousel slides={ficheProjet.pictures} />

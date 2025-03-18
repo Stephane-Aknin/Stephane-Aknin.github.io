@@ -65,18 +65,22 @@ const Header = () => {
       <nav className={`header__nav ${menuOpen ? "open" : ""}`}>
         <ul className="nav__list">
           <li><a href="/#a-propos" onClick={(e) => handleNavigation(e, "#a-propos")}>À propos</a></li>
-          <li><a href="/#competences-projets" onClick={(e) => handleNavigation(e, "#competences-projets")}>Compétences / Projets</a></li>
+          <li><a href="/#services" onClick={(e) => handleNavigation(e, "#services")}>Services</a></li>
           <li><a href="/#contact" onClick={(e) => handleNavigation(e, "#contact")}>Contact</a></li>
         </ul>
       </nav>
 
+      {/* Numéro de téléphone */}
+      <div className="header__phone">
+        <a href="tel:+33618528585">06 18 52 85 85</a>
+      </div>
+
       {/* Bouton Dark Mode */}
       <div className="header__button">
-  <button onClick={toggleDarkMode} aria-label={isDarkMode ? "Activer le mode clair" : "Activer le mode sombre"}>
-    {isDarkMode ? <Moon className="moon__icone" /> : <Sun className="sun__icone" />}
-  </button>
-</div>
-
+        <button onClick={toggleDarkMode} aria-label={isDarkMode ? "Activer le mode clair" : "Activer le mode sombre"}>
+          {isDarkMode ? <Moon className="moon__icone" /> : <Sun className="sun__icone" />}
+        </button>
+      </div>
     </header>
   );
 };

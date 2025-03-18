@@ -95,6 +95,22 @@
   }
 }
 
+.contact__info {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.contact__info h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact__info p {
+  margin: 5px 0;
+}
+
+
 // RESPONSIVE DESIGN
 @media screen and (max-width: #{map.get(vars.$breakpoints, medium)}) {
   .contact__container {
@@ -131,3 +147,4 @@
     }
   }
 }
+
