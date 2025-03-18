@@ -1,29 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Sun, Moon, Menu, X } from "lucide-react"; // Ajouter l'icône Moon
+import {  Menu, X } from "lucide-react"; // Ajouter l'icône Moon
 
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const savedMode = localStorage.getItem("darkMode");
-    return savedMode ? JSON.parse(savedMode) : false;
-  });
+  
 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-    localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
-  }, [isDarkMode]);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -75,12 +61,7 @@ const Header = () => {
         <a href="tel:+33618528585">06 18 52 85 85</a>
       </div>
 
-      {/* Bouton Dark Mode */}
-      <div className="header__button">
-        <button onClick={toggleDarkMode} aria-label={isDarkMode ? "Activer le mode clair" : "Activer le mode sombre"}>
-          {isDarkMode ? <Moon className="moon__icone" /> : <Sun className="sun__icone" />}
-        </button>
-      </div>
+      
     </header>
   );
 };
