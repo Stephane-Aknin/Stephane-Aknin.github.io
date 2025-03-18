@@ -13,7 +13,7 @@ const Home = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Découvrez mes compétences et projets en développement web. Spécialiste React et intégration front-end.");
+      metaDescription.setAttribute("Arboriste Grimpeur, élagueur sur l'Ile d'Oléron Abattage élagage sur corde,Taille et soins des arbres");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
